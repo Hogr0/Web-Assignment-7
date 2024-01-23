@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the latest Dodge cars with our interactive website."
+    />
+    <meta name="keywords" content="Dodge, Charger, Challenger, cars, vehicles" />
+    <title>Dodge Cars</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+      }
+
+      section {
+        margin: 20px;
+        text-align: center;
+      }
+
+      .car-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .car {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .car:hover {
+        transform: scale(1.05);
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      .animated-text {
+        animation: fadeIn 1s ease-in-out;
+      }
+      #car {
+        width: 770px;
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Dodge Cars</h1>
+    </header>
+
+    <section>
+      <p class="animated-text">
+        Explore the latest Dodge cars in vibrant colors!
+      </p>
+      <div class="car-container">
+        <div class="car">
+          <h2>Dodge Charger</h2>
+          <img src="car1.jpg" alt="Dodge Charger" />
+          <p>Powerful and stylish sedan with a performance edge.</p>
+          <a href="https://www.dodge.com/charger.html"><button>Learn More</button></a>
+        </div>
+      
+        <div class="car">
+          <h2>Dodge Challenger</h2>
+          <img src="car2.jpg" alt="Dodge Challenger" id="car" />
+          <p>Iconic muscle car with a blend of power and classic design.</p>
+          <a href="https://www.dodge.com/challenger.html"><button>Learn More</button></a>
+        </div>
+        
+      </div>
+      
+
+      </div>
+    </section>
+  </body>
+</html>
